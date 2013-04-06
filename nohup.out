@@ -1,0 +1,4 @@
+Repo listening at http://0.0.0.0:8081
+Starting to load templates in /Users/cliftonc/work/repo/data/packages
+WARN package.json repo@0.0.4 No README.md file found!
+Done loading packages

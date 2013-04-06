@@ -1,0 +1,40 @@
+{
+  "author": "Clifton Cunningham <clifton.cunningham@gmail.com>",
+  "name": "repo",
+  "description": "A simple pacakge repository modelled after NPM and inherited liberally from reggie.",
+  "version": "0.0.4",
+  "type":"application",
+  "bin": {
+    "repo": "./client.js",
+    "repo-server": "./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cliftonc/repo.git"
+  },
+  "dependencies": {
+    "optimist": "0.3.x",
+    "restify": "2.3.x",
+    "mkdirp": "0.3.x",
+    "request": "2.16.x",
+    "npm": "1.1.61",
+    "tar": "0.1.x",
+    "rimraf": "2.1.x",
+    "semver": "1.0.14",
+    "pkginfo": "0.3.0",
+    "lodash": "1.1.x",
+    "read-package-json": "0.3.x",
+    "async": "0.2.x",
+    "colors": "0.6.x",
+    "cli-table":"0.2.x",
+    "mustache": "0.7.2"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "> 0.8"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
