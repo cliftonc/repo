@@ -65,9 +65,9 @@ server.put('/package/:name/:version', function (req, res, next) {
   // write the tar file. Don't combine the streamed gzip and untar on upload just yet...
   req
     .on('end', function () { 
-      data.loadPackage(tempPackageFile, name, version, function (err) {
+      data.addPackage(tempPackageFile, name, version, function (err) {
         if (err) {
-          console.error("Error loading package from upload: " + (err.message || err));
+          console.error("Error adding package from upload: " + (err.message || err));
           fs.unlink(tempPackageFile);
           return next(err);
         }
