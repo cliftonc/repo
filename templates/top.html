@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<script src="/socket.io/socket.io.js"></script>
+		<script>
+		  var socket = io.connect("{{{url}}}"),
+		  	  name = "{{name}}",
+		  	  version = "{{version}}";
+
+		  socket.on('package', function (data) {		  
+		  	if(data.name == name && data.version == version) {
+		  		location.reload(true);
+		  	}		    
+		  });
+		</script>
+		<script src="/js/default?latest=true"></script>
+        <link rel="stylesheet" href="/css/default?latest=true"/>
+	</head>
+	<body>
+		<div class="beta">
+			<div class="news item static">

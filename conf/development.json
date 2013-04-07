@@ -1,0 +1,14 @@
+{
+	"port":"4337",
+	"host":"localhost",
+	"externalUrl":"localhost:4337",
+	"loglevel":"debug",
+	"sortOrder":{
+	    "core":-99,	     
+	    "article":1,
+	    "gallery":2,
+	    "list":3,
+	    "module":4,  
+	    "other":10
+	}
+}

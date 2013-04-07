@@ -1,0 +1,14 @@
+{
+	"port":"4337",
+	"host":"127.0.0.1",
+	"externalUrl":"rpo.nodejitsu.com",
+	"loglevel":"error",
+	"sortOrder":{
+	    "core":-2,  
+	    "article":1,
+	    "gallery":2,
+	    "list":3,
+	    "module":4,  
+	    "other":10
+	 }
+}
