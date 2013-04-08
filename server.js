@@ -159,6 +159,19 @@ server.del('/api/package/:name/:version', function (req, res, next) {
   });
 });
 
+server.post('/api/package/:name/live/:version', function (req, res, next) {
+  var name = req.params.name;
+  var version = req.params.version;
+  log.debug('Updating live version for package ' + name + ' TO ' + version);
+  data.setLiveVersion(name, version, function (err) {
+    if (err) {
+      log.error("Error updating live versios for package " + name + "@" + version + ": " + (err.message || err));
+      return next(err);
+    }
+    res.send(200);
+  });
+});
+
 server.get('/api/versions/:name', function (req, res) {
   var name = req.params.name;
   log.debug('Requested version list for ' + name);
@@ -203,10 +216,10 @@ server.get('/js/:key', function (req, res) {
   var key = req.params.key, 
       latest = req.params.latest;
 
-  log.debug('JS ' + key + ' & ' + (latest ? 'latest' : live));
+  log.debug('JS ' + key + ' & ' + (latest ? 'latest' : 'live'));
 
   res.contentType = 'application/javascript'; // Lookup  
-  combinator.compressJs(key, latest ? 'latest' : 'live', function(err, js) {
+  combinator.compressJs(key, latest ? 'latest' : 'live', res, function(err, js) {
     if(err) return res.send(err);
     res.end(js.code);  
   });
@@ -218,10 +231,10 @@ server.get('/css/:key', function (req, res) {
   var key = req.params.key, 
       latest = req.params.latest;
 
-  log.debug('CSS ' + key + ' & ' + (latest ? 'latest' : live));
+  log.debug('CSS ' + key + ' & ' + (latest ? 'latest' : 'live'));
 
   res.contentType = 'application/css'; // Lookup  
-  combinator.compressCss(key, latest ? 'latest' : 'live', function(err, css) {
+  combinator.compressCss(key, latest ? 'latest' : 'live', res, function(err, css) {
     if(err) return res.send(err);
     res.end(css);
   }); 

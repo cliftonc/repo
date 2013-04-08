@@ -3,3 +3,5 @@ data
 nohup.out
 logs/*
 .gitignore
+.DS_Store
+.ds_store
