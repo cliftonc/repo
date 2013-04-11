@@ -12,7 +12,7 @@ Key aims:
 =========
 
 Central repository that enables me to effectively manage the lifecycle of components:
------
+
 
  - [x] Create a component as a folder containing: a package descriptor, html, css, javascript and other assets.
  - [x] Package this component and publish it to a repository.
@@ -27,14 +27,15 @@ Central repository that enables me to effectively manage the lifecycle of compon
  - [x] View full history of a component.
  - [x] Preview any previous version of a component.
 
-- Enables me to distribute packages of CSS effectively to the front end:
+Enables me to distribute packages of CSS effectively to the front end:
+
 
  - [x] Request a concatenated and cleaned CSS file that contains all of CSS from all of the live packages.
  - [x] Request a concatenated and cleaned CSS file that contains all of CSS from all of the latest packages.
  - [x] Cache the above requests for performance reasons.
  - [ ] Request CSS for a custom set of packages.
 
-- Enables me to distribute packages of JS effectively to the front end:
+Enables me to distribute packages of JS effectively to the front end:
 
  - [x] Request a minified & jshinted JS file that contains all of JS from all of the live packages.
  - [x] Request a minified & jshinted JS file that contains all of JS from all of the live packages.
@@ -42,7 +43,7 @@ Central repository that enables me to effectively manage the lifecycle of compon
  - [x] Cache the above requests for performance reasons.
  - [ ] Request JS and sourcemap for a custom set of packages.
 
-- This will give us a workflow for a change to an existing component as simple as:
+This will give us a workflow for a change to an existing component as simple as:
 
 '''
 	repo fetch image_swap_carousel
