@@ -14,33 +14,33 @@ Key aims:
 Central repository that enables me to effectively manage the lifecycle of components:
 -----
 
-  [x] Create a component as a folder containing: a package descriptor, html, css, javascript and other assets.
-  [x] Package this component and publish it to a repository.
-  [x] Preview the component as it would appear.
-  [x] Have the preview automatically update as changes are published to it.
-  [x] Enable auto-publication as a component is modified (coupled with above allows for rapid build / preview).
-  [x] Download an existing version of a component for modification.
-  [x] Track changes to a component, and allow specifying a single version to be 'live' at any one time.
-  [x] Retrieve an index of components by type (for the authoring nodes to use).
-  [x] Retrieve an index of all components (for the publishing nodes to use).
-  [x] Search the repository.
-  [x] View full history of a component.
-  [x] Preview any previous version of a component.
+ - [x] Create a component as a folder containing: a package descriptor, html, css, javascript and other assets.
+ - [x] Package this component and publish it to a repository.
+ - [x] Preview the component as it would appear.
+ - [x] Have the preview automatically update as changes are published to it.
+ - [x] Enable auto-publication as a component is modified (coupled with above allows for rapid build / preview).
+ - [x] Download an existing version of a component for modification.
+ - [x] Track changes to a component, and allow specifying a single version to be 'live' at any one time.
+ - [x] Retrieve an index of components by type (for the authoring nodes to use).
+ - [x] Retrieve an index of all components (for the publishing nodes to use).
+ - [x] Search the repository.
+ - [x] View full history of a component.
+ - [x] Preview any previous version of a component.
 
 - Enables me to distribute packages of CSS effectively to the front end:
 
-  [x] Request a concatenated and cleaned CSS file that contains all of CSS from all of the live packages.
-  [x] Request a concatenated and cleaned CSS file that contains all of CSS from all of the latest packages.
-  [x] Cache the above requests for performance reasons.
-  [ ] Request CSS for a custom set of packages.
+ - [x] Request a concatenated and cleaned CSS file that contains all of CSS from all of the live packages.
+ - [x] Request a concatenated and cleaned CSS file that contains all of CSS from all of the latest packages.
+ - [x] Cache the above requests for performance reasons.
+ - [ ] Request CSS for a custom set of packages.
 
 - Enables me to distribute packages of JS effectively to the front end:
 
-  [x] Request a minified & jshinted JS file that contains all of JS from all of the live packages.
-  [x] Request a minified & jshinted JS file that contains all of JS from all of the live packages.
-  [x] Attach a source map for the minified JS file and provide that source map to allow debugging of the JS.
-  [x] Cache the above requests for performance reasons.
-  [ ] Request JS and sourcemap for a custom set of packages.
+ - [x] Request a minified & jshinted JS file that contains all of JS from all of the live packages.
+ - [x] Request a minified & jshinted JS file that contains all of JS from all of the live packages.
+ - [x] Attach a source map for the minified JS file and provide that source map to allow debugging of the JS.
+ - [x] Cache the above requests for performance reasons.
+ - [ ] Request JS and sourcemap for a custom set of packages.
 
 - This will give us a workflow for a change to an existing component as simple as:
 
