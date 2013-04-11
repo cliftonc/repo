@@ -14,7 +14,7 @@ Key aims:
 Central repository that enables me to effectively manage the lifecycle of components:
 
 
- - [x] Create a component as a folder containing: a package descriptor, html, css, javascript and other assets.
+ - [x] Create a component as a folder containing: a package descriptor, html, css, javascript, static sample data and any other assets.
  - [x] Package this component and publish it to a repository.
  - [x] Preview the component as it would appear.
  - [x] Have the preview automatically update as changes are published to it.
