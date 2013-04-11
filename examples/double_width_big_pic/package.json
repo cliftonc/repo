@@ -1,0 +1,13 @@
+{
+  "author": "Clifton Cunningham <clifton.cunningham@gmail.com>",
+  "name": "double_width_big_pic",
+  "description": "This the double column big pic",
+  "version": "0.0.1",
+  "type":"article",
+  "sequence":10,  
+  "slot":"double",
+  "css": ["css/style.css"],
+  "html": ["templates/double_width_big_pic.html"],
+  "partials": ["templates/image.html", "templates/share_and_comments.html"],
+  "data":"data.json"
+}

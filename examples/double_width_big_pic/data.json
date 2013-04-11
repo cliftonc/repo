@@ -1,0 +1,12 @@
+{
+  "headline":"Multi-millionaire TechCrunch website founder and venture capitalist is publicly accused by his ex-girlfriend of 'rape, assault and making threats to kill her'",
+  "preview-text":"Jenn Allen, who is herself a tech entrepreneur, wrote last month that Arrington had physically and emotionally abused her during their eight year relationship and threatened to kill her if she told anyone. In a subsequent post on a news site, she claimed that Arrington had also sexually assaulted a friend.", 
+  "articleURL":"/article-123",
+	"image" : {
+		"caption":"I can also change sample data",
+		"hostUrl":"http://i.dailymail.co.uk/i/pix/2013/04/07/article-2305449-192940DC000005DC-741_308x319.jpg",
+		"altTag":"Looking swell! Kim reveals her baby bump",
+    "height":319,
+    "width":308
+	}  
+}

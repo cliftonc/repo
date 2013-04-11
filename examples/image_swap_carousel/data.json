@@ -1,0 +1,35 @@
+{
+  "gallery": {
+  	"introduction":"This is some introductory text"
+  },
+  "first-image": {
+  	"image" : {
+  		"caption":"A picture of kim kardashian? Yikes!",
+  		"popupHostUrl":"http://i.dailymail.co.uk/i/pix/2013/04/01/kim-k-bellyNEW_302x322.jpg",
+  		"hostUrl":"http://i.dailymail.co.uk/i/pix/2013/04_01/kimkbelly_83x60.jpg",
+  		"altTag":"Looking swell! Kim reveals her baby bump"
+  	}
+  },
+  "images": [
+  	{"image" : {
+  		"caption":"Bikini-clad Jessica with pal Nicole and hubby Cash",
+  		"popupHostUrl":"http://i.dailymail.co.uk/i/pix/2013/04_01/albabikini_302x322.jpg",
+  		"hostUrl":"http://i.dailymail.co.uk/i/pix/2013/04_01/albabikini_83x60.jpg",
+  		"altTag":"Bikini-clad Jessica with pal Nicole and hubby Cash"
+  	}},
+  	{"image" : {
+  		"caption":"Is giggling Miley smoking marijuana on vacation?",
+  		"popupHostUrl":"http://i.dailymail.co.uk/i/pix/2013/04_01/miley-cyrus-blunt_302x322.jpg",
+  		"hostUrl":"http://i.dailymail.co.uk/i/pix/2013/04_01/miley-cyrus-b_83x60.jpg",
+  		"altTag":"Is giggling Miley smoking marijuana on vacation?"
+  	}}  	
+  ],
+  "last-image": {
+  	"image" : {
+  		"caption":"Bikini-clad Jessica with pal Nicole and hubby Cash",
+  		"popupHostUrl":"http://i.dailymail.co.uk/i/pix/2013/04_01/albabikini_302x322.jpg",
+  		"hostUrl":"http://i.dailymail.co.uk/i/pix/2013/04_01/albabikini_83x60.jpg",
+  		"altTag":"Bikini-clad Jessica with pal Nicole and hubby Cash"
+  	}
+  }
+}

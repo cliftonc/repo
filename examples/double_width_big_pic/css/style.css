@@ -1,0 +1,197 @@
+/* Article CSS should be included into the main CSS file*/
+
+/** GENERIC ARTICLE STYLES **/
+.article {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+.item .article {
+    font-size: 1em; 
+}
+.article a {
+    color:#004DB3;
+}
+.article .article-topic {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #f00;
+}
+.article .articletext {
+    padding: 5px 0 4px 0;
+    /*float:left;*/
+}
+.article .articletext img {
+    float: left;
+    margin: 0 8px 5px 0;
+    _display: inline;
+}
+.article-tri-headline .articletext img {
+    margin-right: 0;
+}
+.article .articletext p {
+    min-height: auto;
+    _height: auto;
+}
+.article .channel-date-container {
+    font-weight: bold;
+    margin-bottom: 5px; 
+}
+.article .channel-date-container .channel-intro {
+    padding: 1px 6px;
+    margin-right: 8px;
+    float: left;    
+}
+
+/** SPECIFIC **/
+.article-small,
+.item .article-small {
+    margin-bottom: 10px;    
+}
+.article-topstory h2,
+.article-large h2,
+.article-tri-headline h2 {
+    margin: 5px 0 0 0;
+    font-size: 2.5em;
+}
+.article-large h2,
+.article-tri-headline h2 {
+    margin-bottom:10px;
+}
+.article-large .articletext-holder {
+    padding: 0 0 8px 10px;
+    float:left;
+    width:308px;
+}
+
+.beta .article-large .articletext-holder,
+.column-split .article-large .articletext-holder {
+    padding: 8px 0 8px 0;
+}
+
+.article-small h2,
+.article-smallslant h2,
+.article-star-search h2,
+.article-star-search h3{
+    margin: 5px 0 0 0;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.article-small h2 {
+    margin: 0;  
+}
+
+.article-smallslant .articletitle{
+    position: relative;
+}
+.article-smallslant .articletitle .slant-small-t{
+    background-position: 0 -20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.article-smallslant .articletitle h2{
+    padding: 5px 8px 8px 8px;
+}
+.article-large img{
+    float: left;
+}
+.article-large .morelinks{
+    border-top: none;
+}
+.article-large div.article-icon-links-container{
+    margin-top: 10px;
+}
+.article-large .articletext .morelinks,
+.article-large img{
+    width: 308px;
+    float: left;
+}
+.article-star-search a{
+    color: #000;
+}
+.article-star-search .date-time{
+    margin: 5px 0 0 0;
+    font-weight: bold;
+}
+.article-star-search .article-content{
+    margin-left: 100px;
+}
+.article-star-search .arrow-small-r{
+    margin-right: 4px;
+    margin-left: 4px;
+}
+.article-star-search ul,
+.article-star-search .article-icon-links-container{
+    min-height: 0;
+    display: inline;
+}
+.article-star-search .article-container{
+    margin-bottom: 15px;
+}
+.article-star-search .article-content .link-ccow a {
+    float:left;
+}
+
+.articletext-right {
+    position: relative; 
+}
+.articletext-right img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.articletext-right p {
+    min-height: auto;
+    _height: auto;
+    margin: 0 0 5px 0;  
+}
+.articletext-right {
+    padding-left: 97px; 
+}
+.articletext-right h2 {
+    margin: 0 0 5px 0;  
+}
+.articletext-right div.article-icon-links-container {
+    clear: none;    
+}
+
+h4.books, h4.music, h4.theatre, h4.film {
+    font-size:1.3em;
+    color:white;
+    background-color:#004db3;
+    display:inline;
+}
+h4.music {
+    background-color:#71aa04;   
+}   
+h4.theatre {
+    background-color:#008aff;
+}
+h4.film {
+    background-color:#c02543;
+}
+
+.article-tri-headline .morelinks {
+    padding-top:0;
+    margin-top:0;
+    float:right;
+    width:310px;
+}
+
+.article-timestamp {
+    font-size: 0.9em;
+}
+
+.tag-new,
+.tag-upd {
+    background: #cc0000;
+    color: #fff;
+    font-size: 0.833em;
+    font-weight: bold;
+    padding: 1px 3px;
+    line-height: 1em;
+}
+
+.tag-upd {
+background: #f60;
+}

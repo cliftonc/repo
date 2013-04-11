@@ -1,0 +1,854 @@
+html{color:#000;background:#FFF; font-size: 100%;}
+body { line-height: auto; font-size: 62.5%; margin: 0; font-family: Arial, Helvetica, sans-serif; text-align: center; }
+body,div,dl,dt,dd,ul,ol,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,a{margin:0;padding:0; min-height:1px; _height:1px;}
+table{border-collapse:collapse;border-spacing:0;font-size: 100%;}
+img{margin:0;padding:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+li{padding:0;margin:0;list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
+q:before,q:after{content:'';}
+abbr,acronym {border:0;font-variant:normal;}
+/* to preserve line-height and selector appearance */
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+input,textarea,select,button{font-family:Arial, Helvetica, sans-serif;font-size:inherit;font-weight:inherit;}
+/*to enable resizing for IE*/
+input,textarea,select{*font-size:100%;}
+/*because legend doesn't inherit in IE */
+legend{color:#000;}
+
+.page {
+    width:964px;
+    margin:0 auto;
+    text-align:left;
+}
+.beta-only {
+    width: auto !important; 
+}
+
+#page-container {
+    position: relative; 
+}
+
+.page-banner {
+    /* padding-top:152px; */
+    padding-top: 135px;
+}
+
+/* for super banner 900x125px */
+/*
+.page-banner-super {
+     padding-top: 172px;
+}
+*/
+/* skinny belly band banner */
+.page-banner-sbb {
+    padding-top:185px;
+}
+
+#content {
+    position:relative;
+}
+
+div.page-header {
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    position:relative;
+    margin:2.3em 0 8px 0;
+}
+
+.headeronly div.page-header {
+    margin-bottom: 0;   
+}
+
+.no-top, .no-top div.page-header {
+    margin-top:0.5em;
+}
+
+.masthead {
+    height:91px;
+    background-position:100%;
+    background-repeat:no-repeat;
+    position:relative;
+}
+.masthead img#logo {
+    position:absolute;
+    top:7px;
+    left:0;
+}
+.masthead .banner {
+    width:468px;
+    height:60px;
+    position:absolute;
+    right:0pt;
+    top:15px;
+}
+.page-header .supplements, .page-header .weather {
+    position:absolute;
+    top:-1.6em;
+    left:0;
+    font-size:1.3em;
+    width:400px;
+    -webkit-text-size-adjust: none; /* iphone font-size fix */
+}
+.page-header .supplements a {
+    color:#000;
+    font-weight:bold;
+}
+.page-header .weather {
+    left:auto;
+    right:0;
+    width:550px;
+    text-align:right;
+}
+.page-header .weather a {
+    color:#000;
+}
+.page-header .weather a:hover {
+    text-decoration: underline;
+}
+.page-header .weather span {
+    color:#666;
+}
+.page-header .weather span.last {
+    color:#3366CC;
+    font-weight:bold;
+}
+.page-header .icn-w {
+    background-image: url(/i/furniture/weather/spt_weather_nav.png);
+    font-size: 1px;
+    line-height: 1px;
+    width: 18px;
+    height: 16px;
+    position: absolute;
+}
+
+.page-header .sun, .page-header .clear, .page-header .hot{ background-position: 0 -2px; }
+.page-header .ptcloudy{ background-position: -40px -2px; }
+.page-header .mscloudy{ background-position: -80px -2px; }
+.page-header .cloudy{ background-position: -120px -2px; }
+.page-header .fog{ background-position: -160px -2px; }
+.page-header .scshowers, .page-header .scatrain{ background-position: -200px -2px; }
+.page-header .rain, .page-header .rainwindy{ background-position: -240px -2px; }
+.page-header .heavyrain{ background-position: -280px 2px; }
+.page-header .rainsnow, .page-header .rainicy, .page-header .icyrainsnow{ background-position: -320px -2px; }
+.page-header .snowy, .page-header .snow, .page-header .flurries{ background-position: -360px -2px; }
+.page-header .thunderstorm{ background-position: -400px -2px; }
+.page-header .sunthund{ background-position: -440px -2px; }
+.page-header .sunrain{ background-position: -480px -2px; }
+
+#content .articlePage{
+    min-height:800px;
+    _height:800px;
+}
+.alpha {
+    width:636px;
+    margin-right:20px;
+    float:left;
+    _display:inline;
+}
+.beta-only .alpha {
+    width: auto;
+    margin: 0;  
+}
+.beta,
+.column-split {
+    width:308px;
+    float:left;
+}
+.beta-only .beta {
+    float: none;    
+}
+
+.column-splitter .first-column {
+    margin-right:20px;
+    _display:inline;
+}
+
+/* for WPS overrides see WPS.css in WPS project */
+
+.column-splitter:after, .gamma:after {
+    content: ".";
+    display: block;
+    line-height:0;
+    font-size:0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.column-splitter {
+    min-height: 1px;
+    _height: 1px;
+}
+.page-footer, .and-footer {
+    text-align:center;
+    font-size:1.1em;
+}
+.and-footer {
+    margin: 15px 0;
+}
+.footer div.page-header {
+    margin-top:0;
+}
+
+.page-footer a, .page-header .supplements a {
+    display:inline;
+    border-right:1px solid black;
+    padding:0 4px 0 1px;
+}
+.page-header .supplements a {
+    padding:0 4px 0 1px;
+}
+.and-footer a {
+    padding-right:15px;
+}
+.page-footer a:hover, .and-footer a:hover, .page-header .supplements a:hover {
+    text-decoration:underline;
+}
+.page-footer a.last, .page-header .supplements a.last {
+    border-right:none;
+}
+.and-footer img {
+    display:block;
+    margin:0 auto;
+}
+.and-footer a.last{
+    padding-right:0;
+}
+.and-footer a.copyRight{
+    display:block;
+    padding:10px 0 0 0;
+}
+.and-footer #glam_logo{
+    padding:10px 0 0 0;
+}
+
+.and-footer .cookies img {
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-left: -8px;
+}
+
+
+a { text-decoration:none; cursor:pointer;}
+
+.ext-strict .js-hide {
+    display:none;
+}
+a {
+    color: #003580;
+}
+.cleared:after,
+.page:after{
+    content: ".";
+    display: block;
+    line-height:0;
+    font-size:0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.cleared {
+    min-height: 1px;
+    _height: 1px;
+}
+.clear {
+    clear:both;
+    width:auto;
+    min-height:0 !important;
+    height:0 !important;
+    line-height:0 !important;
+    font-size:0 !important;
+    float:none !important;
+    padding:0 !important;
+    border:0 !important;
+}
+
+br.cleared { clear : both ; line-height : 0 ; margin : 0 ; padding : 0 ; }
+textarea {
+    font-family: Arial;
+    font-size: 12px;
+    padding: 1px 2px;
+}
+.float-l{
+    float: left;
+}
+.float-r{
+    float: right;
+}
+.align-l{
+    text-align: left;
+}
+.align-c{
+    text-align: center;
+}
+.align-r{
+    text-align: right;
+}
+.relative {
+    position: relative;
+}
+.static {
+    position: static !important;
+}
+.block {
+    display: block;
+}
+
+.usability{
+    left: -10000px;
+    position: absolute;
+    text-align: left;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.item {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    position: relative;
+}
+.item .item {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+#content .item .bottom {
+    margin-bottom: 0;
+}
+
+.page{
+    position: relative;
+    margin: 0 auto;
+    width: 964px;
+}
+.header{
+    position: relative;
+}
+p.stanFont, .stanFont p {
+    font-size:1.2em;
+    padding:4px 0;
+}
+
+.two-em {
+    font-size:2em;
+}
+
+.three-em {
+    font-size:3em;
+}
+.generic h1{
+    font-size: 2.2em;
+}
+.generic h2{
+    font-size: 1.4em;
+    padding-top: 10px;
+}
+.generic h3{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.bold { 
+    font-weight: bold;
+}
+.no-border {
+    border:none !important;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/**** ANY GENERIC PADDING/MARGINS ETC USED ****/
+.pl20 {
+    padding-left: 20px;
+}
+
+.pad5 {
+    padding:5px;
+}
+
+.pad10 {
+    padding:10px;
+}
+
+.bot10 {
+    margin-bottom:10px;
+}
+
+.bot15 {
+    margin-bottom:15px;
+}
+
+.rgt320 {
+    margin-right:320px;
+}
+
+.femail .femail-text,
+.royal_wedding .femail-text {
+    font-family:Times New Roman;
+}
+
+/* cross-browser inline-block http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block */
+ul.inblocks {
+    word-spacing: -1em; /* get rid of gaps between items */
+    letter-spacing: -1em; /* the same for for webkit */
+}
+ul.inblocks li {
+    display: -moz-inline-stack; /* FF 2 */    
+    display: inline-block;
+    word-spacing: normal;
+    letter-spacing: normal;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+}
+
+
+/******************************************/
+/**** ROUNDED CORNERS ****/
+/******************************************/
+/**** BEGINNING OF NEW CORNER CLASS DEFINITIONS - EXISTING CORNERS SHOULD BE UPDATED TO THIS STYLE ****/
+.tl, .tr, .bl, .br {
+    background-image: url(/i/furniture/corners/spt_rndcorner_4.png);
+    position: absolute;
+    _font-size: 1px;
+    _line-height: 1px;
+    width: 8px;
+    height: 8px;
+}
+.tl{
+    top: 0;
+    left: 0;
+}
+.tr{
+    top: 0;
+    right: 0;
+}
+.bl{
+    bottom: 0;
+    left: 0;
+}
+.br{
+    bottom: 0;
+    right: 0;
+}
+.cnr-bdr .tr{
+    top: -1px;
+    right: -1px;
+}
+.cnr-bdr .br{
+    bottom: -1px;
+    right: -1px;
+}
+.cnr-bdr .bl{
+    bottom: -1px;
+    left: -1px;
+}
+.cnr-bdr .tl{
+    top: -1px;
+    left: -1px;
+}
+.cnr5 .tr, .cnr5 .tl, .cnr5 .br, .cnr5 .bl {
+    width: 5px;
+    height: 5px;
+}
+
+.tr { background-position: -10px 0; }                   /*** DEFAULT [cnr8 ow-ix] ***/
+.br { background-position: -10px -10px; }               /*** DEFAULT [cnr8 ow-ix] ***/
+.bl { background-position: 0 -10px; }                   /*** DEFAULT [cnr8 ow-ix] ***/
+.tl { background-position: 0 0; }                       /*** DEFAULT [cnr8 ow-ix] ***/
+
+.cnr5 .tr { background-position: -27px 0; }             /*** DEFAULT [cnr5 ow-ix] ***/
+.cnr5 .br { background-position: -27px -7px; }          /*** DEFAULT [cnr5 ow-ix] ***/
+.cnr5 .bl { background-position: -20px -7px; }          /*** DEFAULT [cnr5 ow-ix] ***/
+.cnr5 .tl { background-position: -20px 0; }             /*** DEFAULT [cnr5 ow-ix] ***/
+
+.cnr5 .ox-iw .tr { background-position: -27px -20px; }
+.cnr5 .ox-iw .br { background-position: -27px -27px; }
+.cnr5 .ox-iw .bl { background-position: -20px -27px; }
+.cnr5 .ox-iw .tl { background-position: -20px -20px; }
+.cnr8 .ox-iw .tr { background-position: -10px -20px; }
+.cnr8 .ox-iw .br { background-position: -10px -30px; }
+.cnr8 .ox-iw .bl { background-position: 0 -30px; }
+.cnr8 .ox-iw .tl { background-position: 0 -20px; }
+
+.cnr5 .ox-igr2 .tr { background-position: -107px -20px; }
+.cnr5 .ox-igr2 .br { background-position: -107px -27px; }
+.cnr5 .ox-igr2 .bl { background-position: -100px -27px; }
+.cnr5 .ox-igr2 .tl { background-position: -100px -20px; }
+.cnr8 .ox-igr2 .tr { background-position: -90px -20px; }
+.cnr8 .ox-igr2 .br { background-position: -90px -30px; }
+.cnr8 .ox-igr2 .bl { background-position: -80px -30px; }
+.cnr8 .ox-igr2 .tl { background-position: -80px -20px; }
+
+.cnr5 .ow-iw-bx .tr { background-position: -27px -40px; }
+.cnr5 .ow-iw-bx .br { background-position: -27px -47px; }
+.cnr5 .ow-iw-bx .bl { background-position: -20px -47px; }
+.cnr5 .ow-iw-bx .tl { background-position: -20px -40px; }
+.cnr8 .ow-iw-bx .tr { background-position: -10px -40px; }
+.cnr8 .ow-iw-bx .br { background-position: -10px -50px; }
+.cnr8 .ow-iw-bx .bl { background-position: 0 -50px; }
+.cnr8 .ow-iw-bx .tl { background-position: 0 -40px; }
+
+.cnr5 .ow-igr2-bx .tr { background-position: -27px -80px; }
+.cnr5 .ow-igr2-bx .br { background-position: -27px -87px; }
+.cnr5 .ow-igr2-bx .bl { background-position: -20px -87px; }
+.cnr5 .ow-igr2-bx .tl { background-position: -20px -80px; }
+.cnr8 .ow-igr2-bx .tr { background-position: -10px -80px; }
+.cnr8 .ow-igr2-bx .br { background-position: -10px -90px; }
+.cnr8 .ow-igr2-bx .bl { background-position: 0 -90px; }
+.cnr8 .ow-igr2-bx .tl { background-position: 0 -80px; }
+
+/*** .cnr5 .ogr1-igr1-bx .tr { background-position: -107px -40px; } *** NOT USED??? ***/
+/*** .cnr5 .ogr1-igr1-bx .br { background-position: -107px -47px; } *** NOT USED??? ***/
+/*** .cnr5 .ogr1-igr1-bx .bl { background-position: -100px -47px; } *** NOT USED??? ***/
+/*** .cnr5 .ogr1-igr1-bx .tl { background-position: -100px -40px; } *** NOT USED??? ***/
+
+.cnr5 .ogr2-ix .tr { background-position: -107px 0; }
+.cnr5 .ogr2-ix .br { background-position: -107px -7px; }
+.cnr5 .ogr2-ix .bl { background-position: -100px -7px; }
+.cnr5 .ogr2-ix .tl { background-position: -100px 0; }
+.cnr8 .ogr2-ix .tr { background-position: -90px 0; }
+.cnr8 .ogr2-ix .br { background-position: -90px -10px; }
+.cnr8 .ogr2-ix .bl { background-position: -80px -10px; }
+.cnr8 .ogr2-ix .tl { background-position: -80px 0; }
+
+.cnr8 .ogr1-ix .tr { background-position: -50px 0; }
+.cnr8 .ogr1-ix .br { background-position: -50px -10px; }
+.cnr8 .ogr1-ix .bl { background-position: -40px -10px; }
+.cnr8 .ogr1-ix .tl { background-position: -40px 0; }
+
+
+
+/******************************************/
+/**** PREVIEW LINKS ****/
+/******************************************/
+
+div.article-icon-links-container {
+    clear:both;
+}
+div.article-icon-links-container ul.article-icon-links li {
+    border-left: 1px solid #00aad2;
+    float: left;
+    padding: 0 1px 0 3px;
+    list-style-type: none;
+    white-space: nowrap;
+}
+div.article-icon-links-container ul.article-icon-links li.first {
+    border-left: 0 none;
+    padding: 0;
+}
+div.article-icon-links-container ul.article-icon-links li a {
+    color: #00aad2;
+    position: relative;
+    padding-right: 2px;
+    _padding-right: 1px;
+    display: block;
+    _display: inline;
+    z-index : 10;
+}
+div.article-icon-links-container ul.article-icon-links li a:hover {
+    text-decoration: none;
+    _text-decoration: underline;
+    color: #00aad2;
+}
+div.article-icon-links-container ul.article-icon-links li a .icon {
+    height: 12px;
+    width: 19px;
+    background-color: #00aad2;
+    position: absolute;
+    margin-top: 2px;
+    /* top: 2px; - BREAKS IE8 */
+    left: 0;
+    background-image: url(/i/furniture/spt_previewlinks_8.png);
+    _font-size: 1px;
+    _line-height: 1x;
+}
+div.article-icon-links-container ul.article-icon-links li a.addstories-link .icon,
+div.article-icon-links-container ul.article-icon-links li a.removestories-link .icon,
+div.article-icon-links-container ul.article-icon-links li a.share-link .icon {
+    width: 12px;
+}
+div.article-icon-links-container ul.article-icon-links li a.comments-link .icon {
+    background-position: -30px 0;
+}
+div.article-icon-links-container ul.article-icon-links li a.pictures-link .icon {
+    background-position: -60px 0;
+}
+div.article-icon-links-container ul.article-icon-links li a.videos-link .icon {
+    background-position: -90px 0;
+}
+div.article-icon-links-container ul.article-icon-links li a.share-link .icon {
+    background-position: -210px 0;
+}
+div.article-icon-links-container ul.article-icon-links li a .linktext {
+    padding-left: 21px;
+    _display: inline-block;
+}
+div.article-icon-links-container ul.article-icon-links li a:hover .linktext,
+div.article-icon-links-container ul.article-icon-links li.referrer a:hover span {
+    text-decoration: underline;
+}
+div.article-icon-links-container ul.article-icon-links li a.addstories-link .linktext,
+div.article-icon-links-container ul.article-icon-links li a.removestories-link .linktext,
+div.article-icon-links-container ul.article-icon-links li a.share-link .linktext {
+    padding-left: 15px;
+}
+div.article-icon-links-container ul.article-icon-links li.referrer img {
+    margin-bottom: -1px;
+}
+
+/******************************************/
+/**** MORE LINKS ****/
+/******************************************/
+
+.morelinks {
+    padding-top: 7px;
+    margin-top: 7px;
+}
+.morelinks li {
+    position: relative;
+    margin-bottom: 4px;
+}
+.morelinks .arrow-small-r {
+    top: 0;
+    left: 0;
+    position: absolute;
+    float: none;
+}
+.morelinks a {
+    display: block;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.morelinks a:hover span {
+    text-decoration: none;
+}
+
+/******************************************/
+/**** GREY BUTTONS - SUBMIT ETC  ****/
+/******************************************/
+a .btn-grey{
+    display: block;
+    text-align: center;
+    width: 6em;
+    font-size: 1em;
+    float: left;
+    margin-left: 3px;
+}
+.btn-grey,
+.btn-grey-small{
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0 3px;
+    cursor: pointer;
+    background: transparent url(/i/furniture/articles/button_bg.gif) repeat-x 0 0;
+    *width: 6em;
+}
+.btn-grey-small{
+    *width: 3.5em;
+}
+.btn-grey .arrow-small-r,
+.btn-grey-small .arrow-small-r {
+    float: right;
+    margin-left: 3px;
+}
+.btn-grey .arrow-small-l,
+.btn-grey-small .arrow-small-l {
+    margin-right: 3px;
+}
+
+/******************************************/
+/**** INTELLICRUMB SPECIFIC STYLING ****/
+/******************************************/
+.intellicrumbs {
+    margin: 15px 0 25px 0;
+    font-weight: bold;
+}
+.article-text .intellicrumbs ul,
+.intellicrumbs ul {
+    margin: 0 0 5px 0;
+    list-style-type: none;
+    padding: 0;
+}
+.article-text .intellicrumbs ul li,
+.intellicrumbs ul li {   
+    display: inline;
+    padding: 0 3px 0 0;
+
+}
+.intellicrumbs ul li.pipe {
+    border-right: 1px solid #000;
+    margin-right: 5px;
+}
+.article-text .intellicrumbs ul li a,
+.intellicrumbs ul li a {
+    text-decoration: none;
+    color: #0b9cc6;
+}
+.article-text .intellicrumbs ul li a:hover,
+.intellicrumbs ul li a:hover {
+    text-decoration: underline;
+    color: #0b9cc6;
+}
+.intellicrumbs ul li span{
+    padding: 0 0 0 7px;
+}
+/* Horoscope intellicrumbs specific styles */
+.coffeebreakhoroscopes .intellicrumbs ul {   
+    font-size: 1.2em;
+}
+
+
+/******************************************/
+/********** EXPLORE LINKS STYLING *********/
+/******************************************/
+.explore-links {
+    margin-bottom: 30px;
+}
+.explore-links dd,
+.explore-links dt {
+    display: inline;
+    font-size: 1.2em;
+}
+.explore-links dd a,
+.article-text .explore-links  dd a {
+    text-decoration: none;
+    color: #0b9cc6;
+}
+.explore-links dd a:hover,
+.article-text .explore-links dd a:hover {
+    color: #0b9cc6;
+    text-decoration: underline;
+}
+
+/******************************************/
+/***************** DM TABS  ***************/
+/******************************************/
+/* tabs */
+.dm-tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.dm-tabs li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+}
+.dm-tabs li a {
+    display: block;
+    float: left;
+    outline: none;
+}
+.dm-tab-pane-hidden {
+    display: none;
+}
+.dm-tab-on a {
+    cursor: default;
+}
+
+
+/* social links - used in new reg and new RC; TODO: remove duplicity in article.css */
+
+.soc-lnks li {
+    float: left;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.soc-lnks a,
+.soc-lnks .ico {
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.soc-lnks a,
+.soc-lnks .ico,
+.soc-ico {
+    background: url(/i/furniture/spt_socialicons_22x22.png) no-repeat scroll -999px -999px transparent;
+}
+
+.soc-lnks a span,
+.soc-lnks .ico, {
+    font-size: 0.9em;
+}
+
+.soc-lnks a:hover span {
+    text-decoration: underline;
+}
+
+.soc-ico {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.ico-fcbk {
+    background-position: 0 0;
+}
+
+.soc-lnks .ico-fcbk {
+    background-position: 15px 0;
+}
+
+.ico-twttr {
+    background-position: -50px 0;
+}
+
+.soc-lnks  .ico-twttr {
+    background-position: -35px 0;
+}
+
+.ico-goog {
+    background-position: -250px 0;
+}
+
+.soc-lnks  .ico-goog {
+    background-position: -235px 0;
+}
+
+/* grey icons */
+
+.ico-fcbk-gr {
+    background-position: 0 -50px;
+}
+
+.soc-lnks .ico-fcbk-gr {
+    background-position: 15px -50px;
+}
+
+.ico-twttr-gr {
+    background-position: -50px -50px;
+}
+
+.soc-lnks  .ico-twttr-gr {
+    background-position: -35px -50px;
+}
+
+.ico-goog-gr {
+    background-position: -250px -50px;
+}
+
+.soc-lnks  .ico-goog-gr {
+    background-position: -235px -50px;
+}

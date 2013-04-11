@@ -1,0 +1,8 @@
+{
+  "author": "Clifton Cunningham <clifton.cunningham@gmail.com>",
+  "name": "colours",
+  "description": "Channel colours - core styles.",
+  "version": "0.0.1",
+  "type":"core",  
+  "css": ["style.css"]  
+}

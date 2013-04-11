@@ -1,0 +1,8 @@
+{
+  "author": "Clifton Cunningham <clifton.cunningham@gmail.com>",
+  "name": "core",
+  "description": "Core styles and JS",
+  "version": "0.0.1",
+  "type":"core",  
+  "css": ["style.css"]  
+}

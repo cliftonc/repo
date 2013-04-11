@@ -1,0 +1,39 @@
+
+<div class="image-swap-carousel cleared" id="{{page-element-id}}">
+  <h3 class="gr4ox">{{gallery.introduction}}</h3>
+  <div class="carousel-holder ccox">
+    <div class="carousel horizontal bdrgr3">
+      <div class="gallery-frame">
+         {{#first-image}}
+        <a class="js-link link" id="" href="/">
+          <img class="js-placeholder placeholder" src="{{image.popupHostUrl}}" width="302" height="322" alt="{{image.altTag}}">
+          <span class="js-caption caption wob">
+              {{image.caption}}
+          </span>
+        </a>
+          {{/first-image}}
+      </div>
+      <div class="scroller">
+        <ul class="itemlist link-gr5ox js-itemList" id="">
+            {{#last-image}}            
+            {{> gallery_image }}
+            {{/last-image}}
+            {{#images}}
+            {{> gallery_image }}            
+            {{/images}}
+            {{#first-image}}
+            {{> gallery_image }}
+            {{/first-image}}
+        </ul>
+      </div>
+      <div class="paging-controls">
+        <a class="next js-move-next" href="#" id="">
+          <span class="usability">Next</span>
+        </a>
+        <a class="previous js-move-prev" href="#" id="">
+          <span class="usability">Previous</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
