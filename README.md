@@ -44,6 +44,7 @@ Central repository that enables me to effectively manage the lifecycle of compon
 
 - This will give us a workflow for a change to an existing component as simple as:
 
+'''
 	repo fetch image_swap_carousel
 	cd image_swap_carousel	
 	
