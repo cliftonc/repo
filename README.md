@@ -34,7 +34,7 @@ Key aims:
 
 - Enables me to distribute packages of JS effectively to the front end:
 
- - [x] Request a minified & jshinted JS file that contains all of JS from all of the live packages.
+[x] Request a minified & jshinted JS file that contains all of JS from all of the live packages.
  - [x] Request a minified & jshinted JS file that contains all of JS from all of the live packages.
  - [x] Attach a source map for the minified JS file and provide that source map to allow debugging of the JS.
  - [x] Cache the above requests for performance reasons.
@@ -42,7 +42,6 @@ Key aims:
 
 - This will give us a workflow for a change to an existing component as simple as:
 
-'''
 	repo fetch image_swap_carousel
 	cd image_swap_carousel	
 	
@@ -59,4 +58,3 @@ Key aims:
 	repo live image_swap_carousel 0.0.7
 
 	// Your new carousel is live on the site
-'''
