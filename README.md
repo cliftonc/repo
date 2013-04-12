@@ -21,16 +21,32 @@ Central repository that enables me to effectively manage the lifecycle of compon
 [x] Package this component and publish it to a repository via a single command.
 
 [x] Preview the component as it would appear.
- - [x] Have the preview automatically update as changes are published to it.
- - [x] Enable auto-publication as a component is modified (coupled with above allows for rapid build / preview).
- - [x] Fetch an existing version of a component for modification.
- - [x] Track changes to a component, and allow specifying a single version to be 'live' at any one time.
- - [x] Retrieve an index of components by type (for the authoring nodes to use).
- - [x] Retrieve an index of all components (for the publishing nodes to use).
- - [x] Search the repository.
- - [x] View full history of a component.
- - [x] Preview any previous version of a component.
- - [ ] Some way of namespacing.
+
+[x] Have the preview automatically update as changes are published to it.
+
+[x] Enable auto-publication as a component is modified (coupled with above allows for rapid build / preview).
+
+[x] Fetch an existing version of a component for modification.
+
+[x] Track changes to a component, and allow specifying a single version to be 'live' at any one time.
+
+[x] Retrieve an index of components by type (for the authoring nodes to use).
+
+[x] Retrieve an index of all components (for the publishing nodes to use).
+
+    Web: See the [index] example.
+    CLI: repo index
+
+[x] Search the repository.
+
+
+[x] View full history of a component.
+
+
+[x] Preview any previous version of a component.
+
+
+[ ] Some way of namespacing.
 
 Enables me to distribute packages of CSS effectively to the front end:
 
@@ -67,3 +83,8 @@ This will give us a workflow for a change to an existing component as simple as:
 	repo live image_swap_carousel 0.0.7
 
 	// Your new carousel is live on the site
+
+
+[index]: http://rpo.jit.su/api/index  "Index API"
+[type]: http://rpo.jit.su/api/index/type/gallery  "Index API by type"
+
