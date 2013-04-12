@@ -15,17 +15,21 @@ Central repository that enables me to effectively manage the lifecycle of compon
 
 
  - [x] Create a component as a folder containing: a package descriptor, html, css, javascript, static sample data and any other assets.
- - [x] Package this component and publish it to a repository.
+
+''' See the /examples folder.
+
+ - [x] Package this component and publish it to a repository via a single command.
  - [x] Preview the component as it would appear.
  - [x] Have the preview automatically update as changes are published to it.
  - [x] Enable auto-publication as a component is modified (coupled with above allows for rapid build / preview).
- - [x] Download an existing version of a component for modification.
+ - [x] Fetch an existing version of a component for modification.
  - [x] Track changes to a component, and allow specifying a single version to be 'live' at any one time.
  - [x] Retrieve an index of components by type (for the authoring nodes to use).
  - [x] Retrieve an index of all components (for the publishing nodes to use).
  - [x] Search the repository.
  - [x] View full history of a component.
  - [x] Preview any previous version of a component.
+ - [ ] Some way of namespacing.
 
 Enables me to distribute packages of CSS effectively to the front end:
 
