@@ -13,7 +13,7 @@ Key aims:
 
 Central repository that enables me to effectively manage the lifecycle of components:
 
-*[x] Create a component as a folder containing: a package descriptor, html, css, javascript, static sample data and any other assets.*
+**[x] Create a component as a folder containing: a package descriptor, html, css, javascript, static sample data and any other assets.**
 
 See the [examples] folder.
 
