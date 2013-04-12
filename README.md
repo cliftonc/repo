@@ -34,8 +34,9 @@ Central repository that enables me to effectively manage the lifecycle of compon
 
 [x] Retrieve an index of all components (for the publishing nodes to use).
 
-> Web: See the [index] example.
-> CLI: repo index
+> Via Web: See the [index] example.
+
+> Via CLI: repo index
 
 [x] Search the repository.
 
