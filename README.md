@@ -15,7 +15,7 @@ Central repository that enables me to effectively manage the lifecycle of compon
 
 **[x] Create a component as a folder containing: a package descriptor, html, css, javascript, static sample data and any other assets.**
 
-See the [examples] folder.
+<quote>See the [examples] folder.</quote>
 
 **[x] Package this component and publish it to a repository via a single command.**
 
