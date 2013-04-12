@@ -245,10 +245,10 @@ server.get('/jsmap/:key', function (req, res) {
   var key = req.params.key,
       latest = req.params.latest;
 
-  log.debug('JS Source Map ' + key + ' & ' + (latest ? 'latest' : live));
+  log.debug('JS Source Map ' + key + ' & ' + (latest ? 'latest' : 'live'));
 
   res.contentType = 'application/javascript'; // Lookup
-  combinator.compressJs(key, latest ? 'latest' : 'live', function(err, js) {
+  combinator.compressJs(key, latest ? 'latest' : 'live', res, function(err, js) {
     if(err) return res.send(err);
     res.end(js.map);  
   });
@@ -293,8 +293,27 @@ server.get('/preview/:name/:version/:template', function(req, res) {
 
   log.debug('Showing ' + name + ' @ ' + version + ' using '  + template + ' template');
   
-  var top = Mustache.compile(fs.readFileSync('./html/top.html').toString())({url: externalUrl, name: name, version: version}),
-    bottom = Mustache.compile(fs.readFileSync('./html/bottom.html').toString())({url: externalUrl, name: name, version: version});
+  var top = Mustache.compile(fs.readFileSync('./templates/top.html').toString())({url: externalUrl, name: name, version: version}),
+    bottom = Mustache.compile(fs.readFileSync('./templates/bottom.html').toString())({url: externalUrl, name: name, version: version});
+
+  data.renderPackage(name, version, template, function(err, html) {
+    if(err) return res.end(err.message);
+    res.end(top + html + bottom)
+  });
+
+})
+
+
+server.get('/preview/:name/:version', function(req, res) {
+
+  var name = req.params.name;
+  var version = req.params.version;
+  var template = req.params.name;
+
+  log.debug('Showing ' + name + ' @ ' + version + ' using '  + template + ' template');
+  
+  var top = Mustache.compile(fs.readFileSync('./templates/top.html').toString())({url: externalUrl, name: name, version: version}),
+    bottom = Mustache.compile(fs.readFileSync('./templates/bottom.html').toString())({url: externalUrl, name: name, version: version});
 
   data.renderPackage(name, version, template, function(err, html) {
     if(err) return res.end(err.message);

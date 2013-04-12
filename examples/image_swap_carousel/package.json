@@ -1,14 +1,22 @@
 {
-  "author": "Clifton Cunningham <clifton.cunningham@gmail.com>",
-  "name": "image_swap_carousel",
-  "description": "This is the image swap carousel used at the top of the home page.",
-  "version": "0.0.6",
-  "type":"gallery",
-  "sequence":10,  
-  "slot":"single",
-  "css": ["css/style.css"],
-  "js": ["js/showbiz.js"],
-  "html": ["templates/image_swap_carousel.html"],
-  "partials": ["templates/gallery_image.html"],
-  "data":"data.json"
+    "author": "Clifton Cunningham <clifton.cunningham@gmail.com>",
+    "name": "image_swap_carousel",
+    "description": "This is the image swap carousel used at the top of the home page.",
+    "version": "0.0.7",
+    "type": "gallery",
+    "sequence": 10,
+    "slot": "single",
+    "css": [
+        "css/style.css"
+    ],
+    "js": [
+        "js/showbiz.js"
+    ],
+    "html": [
+        "templates/image_swap_carousel.html"
+    ],
+    "partials": [
+        "templates/gallery_image.html"
+    ],
+    "data": "data.json"
 }
