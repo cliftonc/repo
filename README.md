@@ -13,36 +13,32 @@ Key aims:
 
 Central repository that enables me to effectively manage the lifecycle of components:
 
+*[x] Create a component as a folder containing: a package descriptor, html, css, javascript, static sample data and any other assets.*
 
-[x] Create a component as a folder containing: a package descriptor, html, css, javascript, static sample data and any other assets.
-
-> See the [examples] folder.
+See the [examples] folder.
 
 [x] Package this component and publish it to a repository via a single command.
 
-> Via CLI:  repo publish
+Via CLI:  repo publish
 
 [x] Preview the component as it would appear.
 
-> Via Web:  View [preview] here.
+Via Web:  View [preview] here.
 
 [x] Have the preview automatically update as changes are published to it.
 
-> First of all, via the CLI, set the publish to auto:  repo publish -af
-
-> Then, browse to the [preview] in another window.
-
-> Make changes to any of the assets in the folder, the preview will update as soon as you save.
+First of all, via the CLI, set the publish to auto:  repo publish -af
+Then, browse to the [preview] in another window.
+Make changes to any of the assets in the folder, the preview will update as soon as you save.
 
 [x] Fetch an existing version of a component for modification.
 
-> Via CLI: repo fetch image_swap_carousel
+Via CLI: repo fetch image_swap_carousel
 
 [x] Track changes to a component, and allow specifying a single version to be 'live' at any one time.
 
-> Via Web: View the full [info] for any component.
-
-> Via CLI: repo info image_swap_carousel
+Via Web: View the full [info] for any component.
+Via CLI: repo info image_swap_carousel
 
 [x] Retrieve an index of components by type (for the authoring nodes to use).
 
@@ -110,7 +106,7 @@ This will give us a workflow for a change to an existing component as simple as:
 [examples]: https://github.com/cliftonc/repo/tree/master/examples "Examples"
 [index]: http://rpo.jit.su/api/index  "Index API"
 [type]: http://rpo.jit.su/api/index/type/gallery  "Type"
-[search]: http://rpo.jit.su/api/index/search/showbiz  "Search"
+[search]: http://rpo.jit.su/api/index/search/colour  "Search"
 [info]: http://rpo.jit.su/api/info/image_swap_carousel  "Info"
 [preview]: http://rpo.jit.su/preview/image_swap_carousel  "Preview"
 [version]: http://rpo.jit.su/preview/image_swap_carousel/0.0.5  "Preview Older Version"
