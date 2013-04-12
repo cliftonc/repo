@@ -28,13 +28,27 @@ Central repository that enables me to effectively manage the lifecycle of compon
 
 [x] Have the preview automatically update as changes are published to it.
 
-[x] Enable auto-publication as a component is modified (coupled with above allows for rapid build / preview).
+> First of all, via the CLI, set the publish to auto:  repo publish -af
+
+> Then, browse to the [preview] in another window.
+
+> Make changes to any of the assets in the folder, the preview will update as soon as you save.
 
 [x] Fetch an existing version of a component for modification.
 
+> Via CLI: repo fetch image_swap_carousel
+
 [x] Track changes to a component, and allow specifying a single version to be 'live' at any one time.
 
+> Via Web: View the full [info] for any component.
+
+> Via CLI: repo info image_swap_carousel
+
 [x] Retrieve an index of components by type (for the authoring nodes to use).
+
+> Via Web: View the index by [type].
+
+> Via CLI: repo index gallery
 
 [x] Retrieve an index of all components (for the publishing nodes to use).
 
@@ -42,12 +56,17 @@ Central repository that enables me to effectively manage the lifecycle of compon
 
 [x] Search the repository.
 
+> Via Web: View the index by [search].
+
+> Via CLI: repo search showbiz
 
 [x] View full history of a component.
 
+> Via CLI: repo versions image_swap_carousel
 
 [x] Preview any previous version of a component.
 
+> Via Web: View the index by [version].
 
 [ ] Some way of namespacing.
 
@@ -90,5 +109,8 @@ This will give us a workflow for a change to an existing component as simple as:
 
 [examples]: https://github.com/cliftonc/repo/tree/master/examples "Examples"
 [index]: http://rpo.jit.su/api/index  "Index API"
-[type]: http://rpo.jit.su/api/index/type/gallery  "Index API by type"
+[type]: http://rpo.jit.su/api/index/type/gallery  "Type"
+[search]: http://rpo.jit.su/api/index/search/showbiz  "Search"
+[info]: http://rpo.jit.su/api/info/image_swap_carousel  "Info"
 [preview]: http://rpo.jit.su/preview/image_swap_carousel  "Preview"
+[version]: http://rpo.jit.su/preview/image_swap_carousel/0.0.5  "Preview Older Version"
