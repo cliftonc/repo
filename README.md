@@ -1,11 +1,3 @@
-<style>
-.block {
-	margin: 10px;
-	padding: 10px;
-	border: solid 1px silver;
-	background-color: #efefef;
-}
-</style>
 This is a prototype of a centralised Style repository.
 
 The idea is that we can use this to store all of the various front end components (html, css, js)
@@ -23,7 +15,9 @@ Central repository that enables me to effectively manage the lifecycle of compon
 
 **[x] Create a component as a folder containing: a package descriptor, html, css, javascript, static sample data and any other assets.**
 
-<div class='block'>See the [examples] folder.</div>
+'''
+See the [examples] folder.
+'''
 
 **[x] Package this component and publish it to a repository via a single command.**
 
