@@ -14,12 +14,13 @@ Key aims:
 Central repository that enables me to effectively manage the lifecycle of components:
 
 
- - [x] Create a component as a folder containing: a package descriptor, html, css, javascript, static sample data and any other assets.
+[x] Create a component as a folder containing: a package descriptor, html, css, javascript, static sample data and any other assets.
 
      See the /examples folder.
 
- - [x] Package this component and publish it to a repository via a single command.
- - [x] Preview the component as it would appear.
+[x] Package this component and publish it to a repository via a single command.
+
+[x] Preview the component as it would appear.
  - [x] Have the preview automatically update as changes are published to it.
  - [x] Enable auto-publication as a component is modified (coupled with above allows for rapid build / preview).
  - [x] Fetch an existing version of a component for modification.
