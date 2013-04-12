@@ -17,57 +17,54 @@ Central repository that enables me to effectively manage the lifecycle of compon
 
 See the [examples] folder.
 
-[x] Package this component and publish it to a repository via a single command.
+**[x] Package this component and publish it to a repository via a single command.**
 
 Via CLI:  repo publish
 
-[x] Preview the component as it would appear.
+**[x] Preview the component as it would appear.**
 
 Via Web:  View [preview] here.
 
-[x] Have the preview automatically update as changes are published to it.
+**[x] Have the preview automatically update as changes are published to it.**
 
 First of all, via the CLI, set the publish to auto:  repo publish -af
 Then, browse to the [preview] in another window.
 Make changes to any of the assets in the folder, the preview will update as soon as you save.
 
-[x] Fetch an existing version of a component for modification.
+**[x] Fetch an existing version of a component for modification.**
 
 Via CLI: repo fetch image_swap_carousel
 
-[x] Track changes to a component, and allow specifying a single version to be 'live' at any one time.
+**[x] Track changes to a component, and allow specifying a single version to be 'live' at any one time.**
 
 Via Web: View the full [info] for any component.
 Via CLI: repo info image_swap_carousel
 
-[x] Retrieve an index of components by type (for the authoring nodes to use).
+**[x] Retrieve an index of components by type (for the authoring nodes to use).**
 
-> Via Web: View the index by [type].
+Via Web: View the index by [type].
+Via CLI: repo index gallery
 
-> Via CLI: repo index gallery
+**[x] Retrieve an index of all components (for the publishing nodes to use).**
 
-[x] Retrieve an index of all components (for the publishing nodes to use).
+Via Web: See the [index] example, or via CLI type: repo index
 
-> Via Web: See the [index] example, or via CLI type: repo index
+**[x] Search the repository.**
 
-[x] Search the repository.
+Via Web: View the index by [search].
+Via CLI: repo search showbiz
 
-> Via Web: View the index by [search].
+**[x] View full history of a component.**
 
-> Via CLI: repo search showbiz
+Via CLI: repo versions image_swap_carousel
 
-[x] View full history of a component.
+**[x] Preview any previous version of a component.**
 
-> Via CLI: repo versions image_swap_carousel
+Via Web: View the index by [version].
 
-[x] Preview any previous version of a component.
-
-> Via Web: View the index by [version].
-
-[ ] Some way of namespacing.
+**[ ] Some way of namespacing.**
 
 Enables me to distribute packages of CSS effectively to the front end:
-
 
  - [x] Request a concatenated and cleaned CSS file that contains all of CSS from all of the live packages.
  - [x] Request a concatenated and cleaned CSS file that contains all of CSS from all of the latest packages.
