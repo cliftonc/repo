@@ -16,11 +16,15 @@ Central repository that enables me to effectively manage the lifecycle of compon
 
 [x] Create a component as a folder containing: a package descriptor, html, css, javascript, static sample data and any other assets.
 
-     See the /examples folder.
+> See the [examples] folder.
 
 [x] Package this component and publish it to a repository via a single command.
 
+> Via CLI:  repo publish
+
 [x] Preview the component as it would appear.
+
+> Via Web:  View [preview] here.
 
 [x] Have the preview automatically update as changes are published to it.
 
@@ -34,9 +38,7 @@ Central repository that enables me to effectively manage the lifecycle of compon
 
 [x] Retrieve an index of all components (for the publishing nodes to use).
 
-> Via Web: See the [index] example.
-
-> Via CLI: repo index
+> Via Web: See the [index] example, or via CLI type: repo index
 
 [x] Search the repository.
 
@@ -86,6 +88,7 @@ This will give us a workflow for a change to an existing component as simple as:
 	// Your new carousel is live on the site
 
 
+[examples]: https://github.com/cliftonc/repo/tree/master/examples "Examples"
 [index]: http://rpo.jit.su/api/index  "Index API"
 [type]: http://rpo.jit.su/api/index/type/gallery  "Index API by type"
-
+[preview]: http://rpo.jit.su/preview/image_swap_carousel  "Preview"
