@@ -18,7 +18,7 @@
         "restify": "2.3.x",
         "mkdirp": "0.3.x",
         "request": "2.16.x",
-        "npm": "1.1.61",
+        "npm": "1.1.x",
         "tar": "0.1.x",
         "rimraf": "2.1.x",
         "semver": "1.0.14",
